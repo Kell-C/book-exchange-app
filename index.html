@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plataforma de Troca de Livros</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Bootstrap para facilitar a responsividade -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Troca de Livros</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#add-book">Adicionar Livro</a></li>
+        <li class="nav-item"><a class="nav-link" href="#list-books">Listar Livros</a></li>
+        <li class="nav-item"><a class="nav-link" href="#account">Conta</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <div class="container mt-5" id="app">
+    <!-- Feedback de carregamento -->
+    <div id="loading" class="d-none text-center">
+      <p>Carregando...</p>
+    </div>
+
+    <!-- Adicionar Livro -->
+    <section id="add-book" class="my-5">
+      <h2>Adicionar Livro</h2>
+      <form id="addBookForm">
+        <input type="text" id="titulo" placeholder="Título" required>
+        <input type="text" id="autor" placeholder="Autor" required>
+        <input type="text" id="genero" placeholder="Gênero" required>
+        <input type="number" id="ano" placeholder="Ano" required>
+        <button type="submit">Adicionar Livro</button>
+      </form>
+       <!-- Lista de Livros -->
+    <section id="list-books" class="my-5">
+      <h2>Lista de Livros</h2>
+      <div id="book-list" class="row"></div>
+    </section>
+      <div id="feedback"></div>
+      <div id="loading" class="d-none">Carregando...</div>
+      <ul id="bookList"></ul>
+    </section>
+
+   
+
+    <!-- Mensagem de Feedback -->
+    <div id="feedback" class="alert d-none" role="alert"></div>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

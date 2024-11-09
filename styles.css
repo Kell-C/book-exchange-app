@@ -1,0 +1,34 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+h2 {
+  color: #343a40;
+}
+
+#loading {
+  font-size: 1.5em;
+  color: #007bff;
+}
+
+.alert {
+  margin-top: 20px;
+}
+
+.book-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: #fff;
+}
+
+.book-card h5 {
+  color: #007bff;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
